@@ -1,0 +1,17 @@
+{
+  "name": "local-newgrounds-download-server",
+  "module": "main.js",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "log-timestamp": "^0.3.0",
+    "node-schedule": "^2.1.1"
+  }
+}
