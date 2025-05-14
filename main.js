@@ -12,7 +12,7 @@ const config = {
     sfxFolder: "storage/sfx",
     songsFolder: "storage/songs",
 
-    ...await fs.exists("config.json") && JSON.parse(fs.readFileSync("config.json")),
+    ...await fs.exists("config.json") && JSON.parse(await fs.readFile("config.json")),
     ...process.env
 }
 
