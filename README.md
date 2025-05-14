@@ -6,7 +6,7 @@
 
 ## Setup
 1. `git clone https://github.com/undefined06855/local-newgrounds-server` to clone the repository to the server
-1. `cd local-newgrounds-download-server`
+1. `cd local-newgrounds-server`
 1. `bun i` to install dependencies
 1. Create a `config.json` with `ip`, `port` and a cron string `refreshInterval` (or don't, there's defaults)
 1. `bun main` to start the server
