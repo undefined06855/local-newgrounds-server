@@ -18,10 +18,10 @@ const config = {
 
 // prevent process closing on uncaught exception / unhandled async rejection
 process.on("uncaughtException", event => {
-    console.warn(`${event.message}\n${event.stack}`)
+    console.warn(`Uncaught Exception: ${event.message}\n${event.stack}\n${event.cause}`)
 })
 process.on("unhandledRejection", event => {
-    console.warn(`${event.message}\n${event.stack}`)
+    console.warn(`Unhandled Rejection: ${event.message}\n${event.stack}\n${event.cause}`)
 })
 
 // create folders for shit
